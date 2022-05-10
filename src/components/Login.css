@@ -1,0 +1,141 @@
+.form-user {
+    margin: 50px;
+    width: 60%;
+
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'comercial user-login';
+    overflow: hidden;
+    -webkit-box-shadow: 9px 9px 22px 4px rgba(0, 0, 0, 0.37), 9px 9px 22px 4px rgba(0, 0, 0, 0.37);
+    box-shadow: 9px 9px 22px 4px rgba(0, 0, 0, 0.37), 9px 9px 22px 4px rgba(0, 0, 0, 0.37);
+}
+
+.comercial {
+    width: 100%;
+    height: 400px;
+    grid-area: comercial;
+    background: url('../assets/images/comercial.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: darkgray;
+    background-position-y: 80%;
+
+}
+
+.login-login {
+    width: 100%;
+    grid-area: user-login;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.grid-login {
+    display: grid;
+    grid-template-rows: 170px 1fr 100px;
+    grid-template-areas:
+        'infos'' user-area'' login-button';
+    justify-content: center;
+}
+
+.infos {
+    box-sizing: border-box;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    grid-area: infos;
+}
+
+.user-area {
+    width: 100%;
+    grid-area: user-area;
+}
+
+.login-button {
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    grid-area: login-button;
+}
+
+.reset {
+    color: gray;
+}
+
+@media (max-width: 1024px) {
+    .form-user {
+        margin: 50px;
+        width: 45%;
+
+        border-radius: 25px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'comercial''user-login';
+        overflow: hidden;
+        -webkit-box-shadow: 9px 9px 22px 4px rgba(0, 0, 0, 0.37), 9px 9px 22px 4px rgba(0, 0, 0, 0.37);
+        box-shadow: 9px 9px 22px 4px rgba(0, 0, 0, 0.37), 9px 9px 22px 4px rgba(0, 0, 0, 0.37);
+    }
+
+    .comercial {
+        display: none;
+    }
+
+    .user-area {
+        width: 400px;
+        grid-area: user-area;
+    }
+}
+
+@media (max-width: 1335px) {
+    .comercial {
+        width: 100%;
+        height: 400px;
+        grid-area: comercial;
+        background: url('../assets/images/comercial.jpg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+        background-color: darkgray;
+        background-position-x: 40%;
+        background-position-y: 70%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .form-user{
+        width: 500px;
+    }
+    .login-login {
+        width: 100%;
+        grid-area: login-login;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-user{
+        width: 400px;
+    }
+    .login-login {
+        width: 100%;
+        grid-area: login-login;
+        justify-items: center;
+        align-items: center;
+
+    }
+}
+@media (max-width: 992px) {
+    .form-user{
+        width: 500px;
+    }
+    .login-login {
+        width: 120%;
+        grid-area: login-login;
+        justify-items: center;
+        align-items: center;
+    }
+}

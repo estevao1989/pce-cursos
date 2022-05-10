@@ -1,0 +1,29 @@
+.ask {
+    margin-top: 10px;
+    border: 1px solid #7292b4;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aula {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.aula input {
+    width: 50px;
+}
+.aula label{
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.aula button{
+    margin-right: 10px;
+}
+.aula-2{
+    display: flex;
+    align-items: center;
+}

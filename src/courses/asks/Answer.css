@@ -1,0 +1,42 @@
+.answer {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #d7e1ec;
+}
+
+.answer button{
+    height: 50%;
+    align-self: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+.student-name {
+    font-weight: bolder;
+}
+
+.question {
+    font-weight: lighter;
+}
+.admin-options{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+.admin-options-respond{
+    margin: 10px;
+}
+.admin-options-exclude{
+    margin: 10px;
+}

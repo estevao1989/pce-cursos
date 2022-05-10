@@ -1,0 +1,13 @@
+.user {
+  padding: 0px;
+  display: flex;
+  min-width: 200px;
+  margin: 25px 0px;
+  box-sizing: border-box;
+}
+.user-data {
+ align-self: center;
+}
+.user-action {
+  align-self: center;
+}

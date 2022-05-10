@@ -1,0 +1,10 @@
+.logo img {
+    max-width: 70px;
+    margin: 10px;
+}
+.logo{
+    box-sizing: border-box;
+    padding: 20px;
+    text-decoration: none;
+}
+ 

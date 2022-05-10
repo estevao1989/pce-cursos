@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router } from "react-router-dom";
+import MainRoutes from "./components/MainRoutes";
+import { DataProvider } from "./data/DataContext";
 
-function App() {
+const App = (props) => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <DataProvider>
+        <Router>
+          <NavBar />
+          <MainRoutes />
+        </Router>
+      </DataProvider>
+      {/* <iframe src="https://player.vimeo.com/video/672696307?h=2a462ef126" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
     </div>
   );
-}
+};
 
 export default App;

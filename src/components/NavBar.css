@@ -1,0 +1,58 @@
+span {
+    color: white;
+}
+
+header {
+    background-color: #707070;
+    height: 90px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    padding: 0px 25px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.login-register {
+    margin: 0 20px;
+    align-self: center;
+}
+
+.titulo, .titulo-PCE {
+    font-size: 40px;
+    align-content: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+@media (max-width: 1400px) {
+    .my-nav  {
+        padding: 0%;
+    }
+    .titulo-nav{
+        display: flex;
+    }
+}
+@media (max-width: 1112px) {
+    .titulo-PCE {
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+.curso{
+    max-width: 320px;
+    max-height:500px;
+    overflow: hidden;
+}
+.my-card{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-image{
+    border: solid 2px gray;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 308px;
+    max-height: 200px;
+}
+.control-image{
+    max-width: 320px;
+    overflow: hidden;
+}
+.my-card, .card-title, .card-body, .card-footer{
+    border: none;
+}
+.my-card img{
+    width: 120%;
+    position: relative;
+    right:25px;
+    bottom: 40px;
+}
+#item-curso a:link, a:visited{
+    text-decoration: none;
+}
+#item-curso h5, h6{
+    color: black;
+    font-size: 1.0rem;
+}
+#item-curso h6{
+    color: gray;
+}
+@media (max-width: 1024px){
+    .vendor{
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+.playlist {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'video-selecionado lista-de-videos'
+    'perguntas perguntas'
+    ;
+
+}
+
+.video-selecionado {
+    grid-area: video-selecionado;
+}
+.video-selecionado iframe{
+    width: 100%;
+}
+
+.video-selecionado h6 {
+    color: gray;
+}
+
+.lista-de-videos {
+    grid-area: lista-de-videos;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    height: 74vh;
+    word-wrap: break-word;
+}
+.perguntas{
+    grid-area: perguntas;text-align: center;
+    margin: 10px;
+    
+}
+
+.perguntas-title{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #f3e6e8;
+    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+    border-radius: 10px;
+}
+.perguntas-title:hover{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+
+.video {
+    margin: 2px;
+    box-sizing: border-box;
+    padding: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .playlist {
+        display: grid;
+        grid-template-rows: max-content;
+        grid-template-areas: 'video-selecionado' 'lista-de-videos';
+    }
+}
